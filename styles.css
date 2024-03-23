@@ -1,0 +1,39 @@
+.card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  #sidebarform{
+    width: 0;
+    height: 100%;
+    background-color: grey;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    position: fixed;
+    transition: 0.5s;
+  }
+
+  body{
+    transition: 0.5s;
+  }
+
+  #main button{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 4px;
+    background-color: gray;
+    border-style: none;
+    color: white;
+  }
+
+  input[type=text], input[type=numbers], input[type=radio]{
+    width: 90%;
+    padding: 5px;
+    margin: 5px 0 22px 0;
+    border-style: none;
+  }

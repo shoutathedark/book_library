@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id = "main">
+        <div id = "cardContainer"></div>
+        <button onclick = "openForm()">Add new book</button>
+    </div>
+    <div id="sidebarform">
+        <form>
+            <label for="title">Title</label>
+            <input id = "titleinput" type="text" placeholder="Enter Title" name = "title" required>
+
+            <label for="author">Author</label>
+            <input id = "authorinput" type="text" placeholder="Enter Author" name = "author" required>
+
+            <label for="pages">Pages</label>
+            <input id = "pagesinput" type="number" placeholder="Enter No of Pages" name = "pages" required>
+
+            <p>Has this book been read?</p>
+            
+            <input type="radio" id = "read" name = "read" value = "Read">
+            <label for="read">Read</label>
+            <input type="radio" id = "notread" name = "read" value = "Not read">
+            <label for="notread">Not Read</label>
+        </form>
+        <button onclick = "clickSubmitBook()">Submit</button>
+        <button id = "closebutton" onclick = "closeForm()">Close</button>
+    </div>
+    <script src = "scripts.js"></script>
+</body>
+</html>
